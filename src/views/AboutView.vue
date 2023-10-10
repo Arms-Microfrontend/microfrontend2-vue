@@ -1,15 +1,16 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
+<script setup>
+import '../styles/index.css'
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+const openAlert = () => {
+  window.alert("clicked")
 }
-</style>
+</script>
+
+<template>
+  <main>
+    <div class="react-container">
+      <h2>Loans Manager</h2>
+      <button class="project-button" @click="openAlert">Add loans</button>
+    </div>
+  </main>
+</template>
